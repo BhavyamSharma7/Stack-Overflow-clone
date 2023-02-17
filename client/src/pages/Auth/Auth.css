@@ -1,0 +1,89 @@
+.auth-section{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    min-height: 100vh;
+    margin: 0% auto;
+    background-color: #f1f2f3;
+}
+
+.auth-container-1{
+    width: 35%;
+    font-size: 16px;
+    padding: 30px;
+    margin: 10% 2%;
+}
+
+.login-logo{
+    padding: 20px 30px;
+}
+
+.auth-container-2{
+    display: flex;
+    min-width: 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-container-2 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 5%),
+    0 20px 48px rgb(0 0 0 / 5%),
+    0 1px 4px rgb(0 0 0 / 10%);
+}
+
+.auth-container-2 form label input{
+    padding: 10px;
+    width: calc(100% - 30px);
+    border: 1px solid #0000003e;
+    font-size: 13px;
+}
+
+.auth-container-2 form label:nth-child(1) h4,
+.auth-container-2 form label:nth-child(2) h4,
+.auth-container-2 form label:nth-child(3) h4{
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.auth-container-2 form label:nth-child(4){
+    display: flex;
+}
+
+.auth-container-2 form label:nth-child(4) input{
+    width: 15%;
+    height: 19%;
+    margin: 20px 0;
+}
+
+.auth-btn{
+    margin: 10px;
+    padding: 10px 5px;
+    background-color: #009dff;
+    border: 1px solid #009dff;
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.auth-btn:hover{
+    background-color: #018ce3;
+}
+
+.handle-switch-btn{
+    background-color: transparent;
+    color: #007ac6;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+}

@@ -1,0 +1,39 @@
+.tags-h1{
+    margin-top: 50px;
+    font-weight: 400;
+}
+
+.tags-p{
+    margin: 0;
+    font-size: 15px;
+}
+
+.tags-list-container{
+    display: grid;
+    padding: 30px 0;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.tag{
+    padding: 10px;
+    /* border: 1px solid #d2d2d2; */
+    border-radius: 4px;
+    box-shadow: 0 0 3px slategray;
+}
+
+.tag h5{
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px 5px;
+    font-size: 13px;
+    background-color: #e1ecf4;
+    color: #39739d;
+}
+
+.tag p{
+    font-size: 14px;
+    font-family: math;
+    line-height: 17px;
+    color: #323232;
+}

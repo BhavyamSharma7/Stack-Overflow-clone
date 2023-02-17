@@ -1,0 +1,97 @@
+.user-details-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.user-details{
+    display: flex;
+    align-items: flex-start;
+}
+
+.user-name{
+    padding-left: 20px;
+}
+
+.user-name p{
+    color: #7e7e7e;
+}
+
+.edit-profile-btn{
+    padding: 8px 10px;
+    border: 1px solid #7e7e7e;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.edit-profile-btn:hover{
+    background-color: #c5dced;
+}
+
+.edit-profile-title{
+    padding: 20px 0;
+    border-bottom: 1px solid #dbd9d9;
+}
+
+.edit-profile-title-2{
+    color: grey;
+    font-weight: 400;
+}
+
+.edit-profile-form{
+    padding: 20px;
+    border: 1px solid #dbd9d9;
+    border-radius: 5px;
+}
+
+.edit-profile-form label h3,
+.edit-profile-form label p{
+    margin: 0;
+    padding: 3px 0;
+}
+
+.edit-profile-form label input,
+.edit-profile-form label textarea{
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 50%;
+    border: 1px solid #dbd9d9;
+}
+
+.save-profile-btn{
+    padding: 14px 10px;
+    background-color: #0a95ff;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.save-profile-btn:hover{
+    background-color: #0074cc;
+}
+
+.user-cancel{
+    padding: 14px 17px;
+    color: #0a95ff;
+    border: none;
+    border-radius: 4px;
+    margin-left: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.user-cancel:hover{
+    background-color: #c5d7e6;
+    border: 1px solid #0a95ff;
+}
+
+.save-profile-btn:active, .user-cancel:active{
+    transform: scale(0.88);
+}
