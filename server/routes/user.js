@@ -11,4 +11,7 @@ router.get("/getAllUsers", getAllUsers);
 
 router.patch("/update/:id", auth, updateProfile);
 
+router.put("/follow/:id", auth, follow);
+router.put("/unfollow/:id", auth, unfollow);
+
 export default router;

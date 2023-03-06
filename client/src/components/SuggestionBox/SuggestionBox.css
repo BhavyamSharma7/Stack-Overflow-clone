@@ -1,0 +1,80 @@
+.side-box {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.side-box .title {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  display: block;
+}
+.side-box .list .profile {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.side-box .list .profile .username,
+.image {
+  text-decoration: none;
+  color: #111;
+  display: flex;
+  align-items: center;
+}
+.side-box .list .profile .username {
+  flex: 1;
+  font-size: 0.9rem;
+}
+.side-box .list .profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.side-box .profile span {
+  font-size: 0.8rem;
+  flex: 1;
+  margin-left: 10px;
+}
+.side-box button {
+  background: #f0f0f0;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  font-size: 0.8rem;
+  justify-self: flex-end;
+  float: right;
+  cursor: pointer;
+}
+
+.avatar {
+  background: rgb(47, 128, 242);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1rem;
+  margin: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.side-box .user-searchbar {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  display: flex;
+}
+.side-box .user-searchbar input {
+  flex: 1;
+  font-size: 13px;
+  border: 1px solid rgb(160, 160, 160);
+  padding-left: 18px;
+}
+.side-box .user-searchbar .search-icon {
+  top: 6px;
+  height: 30px;
+  width: 25px;
+}

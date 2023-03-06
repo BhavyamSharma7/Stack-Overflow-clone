@@ -4,6 +4,7 @@ import cors from "cors";
 import userRoutes from "./routes/user.js";
 import questionRoutes from "./routes/question.js";
 import answerRoutes from "./routes/answers.js";
+import postRoutes from "./routes/post.js";
 import dotenv from "dotenv";
 
 const app = express();
@@ -20,6 +21,7 @@ app.get('/', (req, res) => {
 app.use('/user', userRoutes);
 app.use('/questions', questionRoutes);
 app.use('/answers', answerRoutes);
+app.use("/post", postRoutes);
 
 const port = process.env.PORT || 5000;
 const DATABASE_URL = process.env.CONNECTION_URL;

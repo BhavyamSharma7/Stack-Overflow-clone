@@ -1,3 +1,7 @@
+ul{
+    list-style: none;
+}
+
 .main-nav{
     display: flex;
     justify-content: center;
@@ -80,4 +84,103 @@
 
 .nav-links:hover{
     background-color: #d3e4eb;
+}
+
+.menu>li {
+  float: left;
+  color: white;
+  border-radius: 5px;
+  background-color: #ef8236;
+  width: 45px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  font-size: 17px;
+}
+.sub-menu {
+  transform: scale(0);
+  transform-origin: top center;
+  transition: all 300ms ease-in-out;
+}
+.sub-menu li {
+    font-size: 14px;
+    background-color: bisque;
+    padding: 8px 0;
+    width: 85px;
+    color: black;
+    font-weight: 500;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    transform: scale(0);
+    transition: all 300ms ease-in-out;
+}
+
+.sub-menu li:last-child {
+  border-bottom: 0;
+}
+.sub-menu li:hover {
+  background: #f09f66;
+}
+.menu>li:hover .sub-menu li {
+  transform: scale(1);
+}
+.menu>li:hover .sub-menu {
+  transform: scale(0.9);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 20px;
+}
+
+.nav-right-modelbox {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 40px;
+    width: 110px;
+    right: 0;
+    border: 1px solid #ddd;
+}
+.nav-right-modelbox div {
+    padding: 10px;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+    transition: 0.2s all;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-right-modelbox div svg {
+    font-size: 18px;
+}
+.nav-right-modelbox div:hover {
+    background: #f0f0f0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar form{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .menu{
+        display: none;
+    }
+
+    .nav-btn{
+        padding: 5px 10px;
+    }
+
+    .nav-logo{
+        padding: 5px 10px;
+    }
+
+    .nav-logo img{
+        height: 25px;
+    }
 }

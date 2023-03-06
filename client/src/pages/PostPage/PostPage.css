@@ -1,0 +1,13 @@
+.post-page {
+  background: rgb(231, 232, 237);
+  display: flex;
+  justify-content: center;
+  min-height: 91vh;
+}
+.post-page .wrapper {
+  max-width: 450px;
+  margin: 10px auto;
+}
+.post-page .comment-box {
+  display: block;
+}

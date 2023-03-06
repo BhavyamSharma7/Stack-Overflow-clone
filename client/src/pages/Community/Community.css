@@ -1,0 +1,207 @@
+.community-container {
+  background: #f0f0f0;
+  min-height: 100vh;
+}
+.community-container .wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.community-container .community-poster {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.community-container .community-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.community-container .community-header {
+  position: relative;
+  background: #fff;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10px;
+  border-radius: 0 0 5px 5px;
+}
+.community-container .community-profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #43347d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.community-container .community-profile-image img {
+  width: 35%;
+  height: 35%;
+  object-fit: contain;
+}
+.community-container .community-header .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.community-container .tab-bar {
+  background: #fff;
+  margin: 5px 0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px -10px #777;
+}
+.community-container .tab-bar span {
+  margin: 0 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.active-tab {
+  border-bottom: 2px solid rgb(231, 164, 30);
+  padding: 2px 10px;
+}
+
+.community-container .add-post-button {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0 15px -2px #ccc;
+  border: 1px solid #ddd;
+  z-index: 300;
+}
+.community-container .add-post-button .add-button {
+  font-size: 1.3em;
+}
+
+/* --- community posts --- */
+
+.community-container .community-body {
+  display: flex;
+  justify-content: space-between;
+}
+.community-container .community-body .left-sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  margin-top: 10px;
+  background: transparent;
+}
+.community-container .community-body .posts {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+}
+
+/* model box */
+
+.sharepost-container {
+  width: 400px;
+  position: relative;
+}
+@media screen and (max-width: 500px) {
+  .sharepost-container {
+    width: 300px;
+  }
+}
+.sharepost-container .close-icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+.sharepost-container .wrapper {
+  background: #fff;
+  padding: 1rem;
+}
+.sharepost-container .wrapper .title {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.sharepost-container form textarea {
+  width: calc(100% - 20px);
+  height: 100px;
+  padding: 10px;
+  resize: none;
+  background: rgb(235, 236, 239);
+  border: none;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+}
+.sharepost-container .wrapper .image-preview {
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+.sharepost-container .wrapper .image-preview img {
+  width: 100%;
+  object-fit: contain;
+}
+.sharepost-container form button {
+  border: none;
+  background: #f19328;
+  padding: 10px 15px;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  color: #fff;
+}
+.sharepost-container form input {
+  display: none;
+}
+.sharepost-container .share-buttons label {
+  margin-right: 5px;
+  background: #f0f0f0;
+  color: #111;
+  padding: 10px 15px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.sharepost-container .share-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sharepost-container .upload-button {
+  margin: 10px 0;
+}
+
+.about-tab {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .community-container .community-body .left-sidebar {
+    display: none;
+  }
+  .community-container .community-body {
+    justify-content: center;
+  }
+  .community-container .community-body .posts {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    max-width: 500px;
+    margin: 0;
+  }
+  .about-tab {
+    display: inline;
+  }
+}
