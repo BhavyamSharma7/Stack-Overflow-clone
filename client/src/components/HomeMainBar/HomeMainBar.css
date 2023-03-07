@@ -102,13 +102,14 @@
     text-decoration: underline dotted;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .main-bar{
         margin-top: 7%;
+        width: 60%;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
     .main-bar{
         margin-top: 17%;
         width: 100%;

@@ -166,7 +166,7 @@ ul{
     cursor: pointer;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .menu{
         display: block;
         margin-right: 10px;
@@ -179,13 +179,13 @@ ul{
     .main-nav{
         justify-content: space-between;
     }
+}
 
+@media screen and (max-width: 1000px) {
+    
     .navbar form{
         display: none;
     }
-}
-
-@media screen and (max-width: 900px) {
 
     .nav-btn{
         padding: 5px 10px;
