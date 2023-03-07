@@ -11,7 +11,6 @@ import {storage} from "../../firebase";
 import { uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchAllPosts, sharePost } from "../../actions/posts";
-import SuggestionBox from "../../components/SuggestionBox/SuggestionBox";
 import Preview from "../../assets/img-preview.jpg";
 import { useNavigate } from "react-router-dom";
 
@@ -80,7 +79,6 @@ const CommunityHome = () => {
           <div className="community-body">
             <div className="left-sidebar">
               <AboutCommunity />
-              <SuggestionBox />
             </div>
             <div className="posts">
               {activeTab === "post" &&
@@ -104,7 +102,6 @@ const CommunityHome = () => {
         ) : (
           <div className="community-about-body">
               <AboutCommunity />
-              <SuggestionBox />
           </div>
         )}
       </div>
