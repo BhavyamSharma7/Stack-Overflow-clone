@@ -5,6 +5,7 @@ import { setCurrentUser } from "../../actions/currentUser";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import decode from "jwt-decode";
+import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 
 import Avatar from '../Avatar/Avatar';
 
@@ -52,12 +53,13 @@ function Navbar() {
             <div className="navbar">
                 <ul className="menu">
                     <li>
-                    nav
-                    <ul className="sub-menu">
+                        <MenuOutlinedIcon style={{ height: "40px", fontSize: "30px"}} />
+                        <ul className="sub-menu">
                             <li><Link style={{textDecoration: "none", color: "black"}} to="/">Home</Link></li>
                             <li><Link style={{textDecoration: "none", color: "black"}} to="/Questions">Questions</Link></li>
                             <li><Link style={{textDecoration: "none", color: "black"}} to="/Tags">Tags</Link></li>
-                            <li><Link style={{textDecoration: "none", color: "black"}} to="/Users">Users</Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "black" }} to="/Users">Users</Link></li>
+                            <li><Link style={{textDecoration: "none", color: "black"}} to="/stack-community">Community</Link></li>
                         </ul>
                     </li>
                 </ul>

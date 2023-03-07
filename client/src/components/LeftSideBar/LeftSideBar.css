@@ -44,8 +44,14 @@
     border-right: 3px solid #ef8236;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 480px) {
     .left-sidebar{
-        width: 150px;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .left-sidebar{
+        width: 200px;
     }
 }

@@ -1,6 +1,6 @@
 .main-bar{
     float: left;
-    width: calc(100% - 300px - 24px);
+    width: calc(100% - 224px);
     margin: 25px 0;
     padding: 0;
 }
@@ -102,8 +102,15 @@
     text-decoration: underline dotted;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
     .main-bar{
-        width: calc(100% - 200px - 24px);
+        margin-top: 7%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-bar{
+        margin-top: 17%;
+        width: 100%;
     }
 }

@@ -86,10 +86,15 @@ ul{
     background-color: #d3e4eb;
 }
 
+.menu{
+    display: none;
+}
+
 .menu>li {
   float: left;
   color: white;
   border-radius: 5px;
+  text-align: center;
   background-color: #ef8236;
   width: 45px;
   height: 40px;
@@ -161,16 +166,26 @@ ul{
     cursor: pointer;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 400px) {
+    .menu{
+        display: block;
+        margin-right: 10px;
+    }
+
+    .nav-btn{
+        display: none;
+    }
+
+    .main-nav{
+        justify-content: space-between;
+    }
+
     .navbar form{
         display: none;
     }
 }
 
-@media screen and (min-width: 700px) {
-    .menu{
-        display: none;
-    }
+@media screen and (max-width: 900px) {
 
     .nav-btn{
         padding: 5px 10px;
