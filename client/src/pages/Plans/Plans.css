@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+
+.app-wrapper {
+	display: flex;  
+    flex-wrap: wrap;  
+	align-items: center;
+	justify-content: space-around;
+    height: 80vh;
+    padding: 2rem;
+    margin-top: 50px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px #ddd;
+    margin-bottom: 1rem;
+	max-width: 300px;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.card .most-popular {
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #9b59b6;
+    color: #fff;
+    padding: .25em 1rem;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+   
+.basic {
+    border-top: 6px solid #3498db; 
+}
+   
+.medium {
+    border-top: 6px solid #9b59b6; 
+}
+
+.card,
+.card-description,
+.card-billing,
+.card-features,
+.card-action {
+    padding: 15px;
+}
+  
+.card-description h2{
+    font-size: 26px;
+    margin-bottom: .5rem;
+}
+  
+.card-billing {
+    background-color: #ecf0f1;
+}
+
+.card-billing p{
+    margin-bottom: .5rem;
+}
+  
+.card-billing .price {
+    font-size: 32px;
+    font-weight: 700;
+}
+  
+.card-features {
+    min-height: 70px;
+}
+
+.card-features ul li {
+    list-style-type: square;
+    text-align: left;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+  
+.card-action > button {
+    border: 3px solid #3498db;
+    background-color: transparent;
+    color: #3498db;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: .5rem 0;
+    width: 100%;
+    transition: .3s ease all;
+}
+
+.card-action > button:hover {
+    transition: .3s ease all;
+    background-color: #3498db;
+    color: #fff;
+}

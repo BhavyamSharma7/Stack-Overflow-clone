@@ -59,6 +59,7 @@ function Navbar() {
                             <li><Link style={{textDecoration: "none", color: "black"}} to="/Questions">Questions</Link></li>
                             <li><Link style={{textDecoration: "none", color: "black"}} to="/Tags">Tags</Link></li>
                             <li><Link style={{ textDecoration: "none", color: "black" }} to="/Users">Users</Link></li>
+                            <li><Link style={{textDecoration: "none", color: "black"}} to="/plans">Plans</Link></li>
                             <li><Link style={{textDecoration: "none", color: "black"}} to="/stack-community">Community</Link></li>
                         </ul>
                     </li>
@@ -67,7 +68,7 @@ function Navbar() {
                     <img src={logo} alt="logo" height="25"/>
                 </Link>
                 <Link to="/" className="nav-item nav-btn">About</Link>
-                <Link to="/" className="nav-item nav-btn">Products</Link>
+                <Link to="/plans" className="nav-item nav-btn">Plans</Link>
                 <Link to="/stack-community" className="nav-item nav-btn">Community</Link>
                 <form>
                     <input type="text" placeholder="Search..."/>
