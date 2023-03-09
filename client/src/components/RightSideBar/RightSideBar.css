@@ -68,13 +68,7 @@
     font-size: 14px;
 }
 
-@media screen and (max-width: 1000px) {
-    .right-sidebar{
-        width: 180px;
-    }
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .right-sidebar{
         display: none;
     }
