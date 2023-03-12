@@ -1,5 +1,4 @@
 import React from "react";
-import axios from "axios";
 
 import "./Plans.css";
 
@@ -12,7 +11,7 @@ function CardDescription({ title, description }) {
 	);
 };
 
-function CardBilling({ price, recurrency }) {
+function CardBilling({ price }) {
 	return (
 		<div className="card-billing">
 			<p>
@@ -45,24 +44,21 @@ function CardFeatures({ data }) {
 };
 
 function CardAction(props) {
-	const handleSubscribe = async (e) => {
-		e.preventDefault();
 	
-		const response = await axios.post('https://stackoverflow-api-ubav.onrender.com/subscription/create-checkout-session', {
-		  subscription: props
-		});
-	
-		const sessionId = response.data.sessionId;
-		const KEY = (process.env.REACT_APP_STRIPE_PUBLISH_KEY).toString().substring(0, 107);
-		const stripe = window.Stripe(KEY);
-		stripe.redirectToCheckout({
-		  sessionId: sessionId
-		});
-	};
+	const KEY = (process.env.REACT_APP_STRIPE_PUBLISH_KEY).toString().substring(0, 107);
+
 	return (
-		<div className="card-action">
-			<button onClick={handleSubscribe}>SUBSCRIBE</button>
-		</div>
+		props.type === "basic" ? 
+		<stripe-buy-button
+			buy-button-id={(process.env.REACT_APP_STRIPE_BASIC_KEY).toString().substring(0, 32)}
+			publishable-key={KEY}
+		>
+		</stripe-buy-button> :
+		<stripe-buy-button
+			buy-button-id={(process.env.REACT_APP_STRIPE_MED_KEY).toString().substring(0, 32)}
+			publishable-key={KEY}
+		>
+		</stripe-buy-button>	
 	);
 };
 

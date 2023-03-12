@@ -12,7 +12,6 @@ import CommunityHome from "./pages/Community/CommunityHome";
 import PostPage from "./pages/PostPage/PostPage";
 
 import { Routes, Route } from 'react-router-dom';
-import SubscriptionSuccess from "./pages/Subscription/SubscriptionSuccess";
 
 const AllRoutes = () => {
     
@@ -26,7 +25,6 @@ const AllRoutes = () => {
             <Route exact path="/Tags" element={<Tags />} />
             <Route exact path="/Users" element={<Users />} />
             <Route exact path="/plans" element={<Plans />} />
-            <Route exact path="/subscribe/success" element={<SubscriptionSuccess />} />
             <Route exact path="/Users/:id" element={<UserProfile />} />
             <Route exact path="/stack-community" element={<CommunityHome />} />
             <Route path="/stack-community/post/:id" element={<PostPage />} />
